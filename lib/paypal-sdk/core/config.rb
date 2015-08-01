@@ -165,7 +165,7 @@ module PayPal::SDK::Core
 
       # Get default environment name
       def default_environment
-        @@default_environment ||= ENV['PAYPAL_ENV'] || ENV['RACK_ENV'] || ENV['RAILS_ENV'] || "development"
+        @@default_environment ||= ENV['RAILS_ENV'] || "development"
       end
 
       # Set default environment
